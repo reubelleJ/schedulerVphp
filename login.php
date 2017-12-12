@@ -62,10 +62,6 @@
             </div>
           </li>
         </ul>
-        <!-- <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form> -->
         <ul class="nav navbar-nav navbar-right">
           <li class="nav-item">
             <a href="login.php"><button type="button" class="btn btn-outline-success my-2 my-sm-0">Sign In</button></a>
@@ -75,66 +71,25 @@
           </li>
       </div>
     </nav>
-      </div>
-    <div class="jumbotron"> 
-      <div class="container">
-        <span class="glyphicon glyphicon-list-alt"></span>
-        <h2>Scheduler</h2>
-        <div class="box">
-        <!--<div class="row login-div">
-            <div class="col-xs-12 col-md-12"> -->
-                <!-- Login Form -->
-                <form action="login.php" method="post">
-                    <!-- ID field -->
-                    <!--<div class="form-group row">
-                      <label for="inputText3" class="col-sm-2 col-form-label">ID</label>
-                      <div class="col-sm-10">
-                        <input class="form-control" type="text" name="emp-id" id="emp-id" required>
-                      </div>
-                    </div>
-                  -->
-                    <input type="text" name="emp-id" id="emp-ied" placeholder="ID" required>
-
-                    <!-- Password field -->
-                    <!--<div class="form-group row">
-                        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                        <div class="col-sm-10">
-                          <input type="password" class="form-control" name="emp-password" id="emp-password" placeholder="Password" required>
-                        </div>
-                    </div> -->
-                    <input type="password"  name="emp-password" id="emp-password" placeholder="Password" required>
-                    <!-- Company name field -->
-                    <!--<div class="form-group row">
-                      <label for="inputText3" class="col-sm-2 col-form-label">Company</label>
-                      <div class="col-sm-10">
-                        <input class="form-control" type="text" id="emp-company" name="emp-company" required>
-                      </div>
-                    </div>-->
-                    <input type="text" id="emp-company" name="emp-company" placeholder="Company Name" required>
-                  <fieldset class="form-group">
-                  </fieldset>
-                  <div class="form-group row">
-                    <!-- Remember me button -->
-                    <div class="col-sm-12">
-                      <div class="form-check">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox"> Remember me
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                 <!-- Sign in button -->
-                  <!-- <div class="form-group row">
-                    <div class="col-sm-12">
-                      <button type="submit" class="btn btn-primary" name="signin">Sign in</button>
-
-                    </div>
-                  </div>--> <button class="btn btn-default full-width"><span class="glyphicon glyphicon-ok"></span></button>
-                </form> <!-- /* End form */ -->          
-            </div> </div>
+<div class="jumbotron">
+  <div class="form">
+    <form class="login-form" action="login.php" method="post">
+      <h3>Scheduler</h3>
+      <input type="text" name="emp-id" id="emp-ied" placeholder="ID" required>
+      <input type="password" name="emp-password" id="emp-password" placeholder="Password" required>
+      <input type="text" id="emp-company" name="emp-company" placeholder="Company Name" required>
+      <div class="col-sm-12">
+        <div class="form-check">
+          <label class="form-check-label"><input class="form-check-input" type="checkbox"> Remember me</label>
         </div>
-    </div>
-  </div> 
+      </div>
+      <button type="submit" class="btn btn-primary" name="signin">Sign in</button>
+      <p class="message">Not registered? <a href="registration.php">Create an account</a></p>
+    </form>
+  </div>
+</div> <!-- /* End form */ -->          
+           
+        
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
