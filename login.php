@@ -23,21 +23,29 @@
       
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/login-styles.css">
-    
+    <!-- <div class="jumbotron">
+  <div class="container">
+    <span class="glyphicon glyphicon-list-alt"></span>
+    <h2>Calendar</h2>
+    <div class="box">
+        <input type="text" placeholder="username">
+      <input type="password" placeholder="password">
+      <button class="btn btn-default full-width"><span class="glyphicon glyphicon-ok"></span></button>
+    </div>
+  </div>
+</div> -->
   </head>
   <body>
-
+    <div class="starter-template">
     <div class="container">
         <!-- Navigation bar -->
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <a class="navbar-brand" href="#">Scheduler</a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Scheduler</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -46,35 +54,48 @@
                         <a class="nav-link" href="register.php">Register</a>
                       </li>
                     </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                     </form>
                   </div>
                 </nav>
-            </div>
-        </div>
-        <div class="row login-div">
-            <div class="col-xs-12 col-md-12">
+      </div>
+    <div class="jumbotron"> 
+      <div class="container">
+        <span class="glyphicon glyphicon-list-alt"></span>
+        <h2>Scheduler</h2>
+        <div class="box">
+        <!--<div class="row login-div">
+            <div class="col-xs-12 col-md-12"> -->
                 <!-- Login Form -->
                 <form action="login.php" method="post">
                     <!-- ID field -->
-                    <div class="form-group row">
+                    <!--<div class="form-group row">
                       <label for="inputText3" class="col-sm-2 col-form-label">ID</label>
                       <div class="col-sm-10">
                         <input class="form-control" type="text" name="emp-id" id="emp-id" required>
                       </div>
                     </div>
+                  -->
+                    <input type="text" name="emp-id" id="emp-ied" placeholder="ID" required>
+
                     <!-- Password field -->
-                    <div class="form-group row">
+                    <!--<div class="form-group row">
                         <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
                         <div class="col-sm-10">
                           <input type="password" class="form-control" name="emp-password" id="emp-password" placeholder="Password" required>
                         </div>
-                    </div>
+                    </div> -->
+                    <input type="password"  name="emp-password" id="emp-password" placeholder="Password" required>
                     <!-- Company name field -->
-                    <div class="form-group row">
+                    <!--<div class="form-group row">
                       <label for="inputText3" class="col-sm-2 col-form-label">Company</label>
                       <div class="col-sm-10">
                         <input class="form-control" type="text" id="emp-company" name="emp-company" required>
                       </div>
-                    </div>
+                    </div>-->
+                    <input type="text" id="emp-company" name="emp-company" placeholder="Company Name" required>
                   <fieldset class="form-group">
                   </fieldset>
                   <div class="form-group row">
@@ -88,15 +109,17 @@
                     </div>
                   </div>
                  <!-- Sign in button -->
-                  <div class="form-group row">
+                  <!-- <div class="form-group row">
                     <div class="col-sm-12">
                       <button type="submit" class="btn btn-primary" name="signin">Sign in</button>
+
                     </div>
-                  </div>
+                  </div>--> <button class="btn btn-default full-width"><span class="glyphicon glyphicon-ok"></span></button>
                 </form> <!-- /* End form */ -->          
-            </div>
+            </div> </div>
         </div>
     </div>
+  </div> 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
