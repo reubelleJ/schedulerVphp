@@ -64,10 +64,10 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="nav-item">
-            <a href="login.php"><button type="button" class="btn btn-outline-success my-2 my-sm-0">Sign In</button></a>
+            <a href="login.php"><button type="button" class="btn btn-outline-info my-2 my-sm-0">Sign In</button></a>
           </li>
           <li class="nav-item">
-           <a href="registration.php"><button type="button" class="btn btn-success">Sign Up</button></a>
+           <a href="registration.php"><button type="button" class="btn btn-info">Sign Up</button></a>
           </li>
       </div>
     </nav>
@@ -83,7 +83,7 @@
           <label class="form-check-label"><input class="form-check-input" type="checkbox"> Remember me</label>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary" name="signin">Sign in</button>
+      <button type="submit" class="btn btn-outline-info" name="signin">Sign in</button>
       <p class="message">Not registered? <a href="registration.php">Create an account</a></p>
     </form>
   </div>

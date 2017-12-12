@@ -50,20 +50,17 @@
             </div>
           </li>
         </ul>
-        <!-- <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form> -->
         <ul class="nav navbar-nav navbar-right">
           <li class="nav-item">
-            <a href="login.php"><button type="button" class="btn btn-outline-success my-2 my-sm-0">Sign In</button></a>
+            <a href="login.php"><button type="button" class="btn btn-outline-info my-2 my-sm-0">Sign In</button></a>
           </li>
           <li class="nav-item">
-           <a href="registration.php"><button type="button" class="btn btn-success">Sign Up</button></a>
+           <a href="registration.php"><button type="button" class="btn btn-info">Sign Up</button></a>
           </li>
       </div>
     </nav><!-- /* end navigation */ -->
         <!-- Registration form -->
+        <div class="jumbotron">
         <form action="registration.php" method="post">
           <!-- Company name -->
             <div class="form-row">            
@@ -115,9 +112,10 @@
               <input type="text" class="form-control" name="zipcode" id="zipcode" required>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary" name="register">Register</button>
+          <button type="submit" class="btn btn-outline-info" name="register">Register</button>
         </form>
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
