@@ -3,13 +3,15 @@
 	
 	/* Start new or resume existing session */
 	//session_start();
+
 	/* Create a connection with mysqli_connect($servername, $username, $password, $dbname) function */
 	$con = mysqli_connect("localhost","root","","scheduler");
-    // Check connection
+    
+    /* Check connection
     if ($con->connect_error) {
         die("Connection failed: " . $con->connect_error);
     } 
-    echo "Connected successfully";
+    echo "Connected successfully";*/
 ?>
 <html lang="en">
   <head>
@@ -43,7 +45,7 @@
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="register.php">Register</a>
+                        <a class="nav-link" href="registration-form.php">Register</a>
                       </li>
                     </ul>
                   </div>
@@ -65,7 +67,7 @@
                     <div class="form-group row">
                         <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
                         <div class="col-sm-10">
-                          <input type="password" class="form-control" name="emp-password" id="emp-password" placeholder="Password" required>
+                          <input type="password" class="form-control" name="emp-password" id="emp-password" required>
                         </div>
                     </div>
                     <!-- Company name field -->
@@ -78,14 +80,14 @@
                   <fieldset class="form-group">
                   </fieldset>
                   <div class="form-group row">
-                    <!-- Remember me button -->
+                    <!-- Remember me button
                     <div class="col-sm-12">
                       <div class="form-check">
                         <label class="form-check-label">
                           <input class="form-check-input" type="checkbox"> Remember me
                         </label>
                       </div>
-                    </div>
+                    </div>-->
                   </div>
                  <!-- Sign in button -->
                   <div class="form-group row">
