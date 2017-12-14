@@ -1,5 +1,10 @@
 <?php
-	$con = mysqli_connect("localhost","root","","scheduler");
+	$con = mysqli_connect("localhost","root","Cietweb#96","scheduler");
+
+    /* Check connection */
+    if ($con->connect_error) {
+        die("Connection failed: " . $con->connect_error);
+    } 
 
     $company_name = "";
     $company_email = "";
@@ -22,14 +27,6 @@
         $zipcode = mysqli_real_escape_string($con,$_POST['zipcode']);
     }
 
-    echo $company_name . "<br>"; 
-    echo $company_email . "<br>";
-    echo $company_password . "<br>";
-    echo $address . "<br>"; 
-    echo $city . "<br>"; 
-    echo $state . "<br>"; 
-    echo $zipcode . "<br>";
-
     /* verify all fields are not empty */
     if(empty($company_name) OR empty($company_email) OR empty($company_password) OR empty($address) OR empty($city) OR empty($state) OR empty($zipcode))
     {
@@ -37,6 +34,7 @@
         echo "<script>alert('Please complete all fields')</script>";
         exit();
     }
+    /* verify valid email format */
     if(!filter_var($company_email,FILTER_VALIDATE_EMAIL))
     {
         echo "<script>alert('Invalid email input')</script>";
@@ -87,5 +85,6 @@
         //mysqli_close($con);
     }
 
-    header("registration-form.php",true,303);
+    header("Location: ../templates.php");
+    exit();
 ?>

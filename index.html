@@ -18,49 +18,56 @@
 
   <body>
 
-    <!-- Nav bar -->
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Scheduler</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Prices
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Standard template</a>
-                  <a class="dropdown-item" href="#">Custom template</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Web development</a>
-                </div>
-              </li>
-            <li class="nav-item float-right">
-                <div class="col-sm-6"><a href=login.php><button type="button" class="btn btn-success float-right">Login</button></a></div>
-            </li>
-            <li class="nav-item">
-                <div class="col-sm-6"><a href=registration-form.php><button type="button" class="btn btn-success">Register</button></a></div>
-            </li>
-            </ul>
-          </div>
-        </nav>  
-    </div>
-    <!-- Start of body -->
     <div class="container">
+        
+    <!--In navigation html now -->
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">Scheduler</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/pages/templates.html" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Prices</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Standard Template</a>
+              <a class="dropdown-item" href="#">Custom Template</a>
+            </div>
+          </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a href="php/login.php"><button type="button" class="btn btn-outline-success my-2 my-sm-0">Sign In</button></a>
+          </li>
+          <li class="nav-item">
+           <a href="php/registration-form.php"><button type="button" class="btn btn-success">Sign Up</button></a>
+          </li>
+          </ul>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+        <!-- Login -->
+        
         <div class="starter-template">
             <h1>Schedule On The Go!</h1>
             <p class="lead">Efficient scheduling done in real time.<br> Organize your work shifts. Avoid time-gap hassle and on-call anxiety. Take control of your schedule!</p>
-            <a href="https://www.google.com" class="btn btn-info" role="button">Find out more</a>
+            <a href="php/registration-form.php" class="btn btn-info" role="button">Find out more</a>
         </div>
       <hr>
         <!--Carousel-->
@@ -134,7 +141,7 @@
         <div class="col-md-7 order-md-2">
           <h1 class="featurette-heading">Manage your business.<span class="text-muted">We'll manage your people and your time.</span></h1>
           <h4 class="featurette-heading">Available now on multiple platforms. Get started with a three-month trial for only $100!</h4>
-          <a href="https://www.google.com" class="btn btn-info" role="button">Try it now »</a>
+          <a href="registration.php" class="btn btn-info" role="button">Try it now »</a>
         </div>
         <div class="col-md-5 order-md-1">
           <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="http://iqoptions.net/images/iqoption-app.png" data-holder-rendered="true" style="width: auto; height: auto;">
@@ -144,6 +151,7 @@
 
     <hr class="featurette-divider">
 
+ <div class="container">
   <div class="row">
     <div class="col-sm-8">
       <h2 class="mt-4">Get to know us</h2>
@@ -165,8 +173,9 @@
         (123) 456-7890
         <br>
         <abbr title="Email">E:</abbr>
-        <a href="mailto:#">rhqj@startup.com</a>
+        <a href="mailto:#">rhqj@scheduler.com</a>
       </address>
+      </div>
     </div>
   </div>
 

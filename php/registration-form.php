@@ -1,18 +1,4 @@
 <!doctype html>
-<?php
-	
-	/* Start new or resume existing session
-	//session_start();
-	
-    /* Create a connection with mysqli_connect($servername, $username, $password, $dbname) function
-	$con = mysqli_connect("localhost","root","","scheduler");
-    
-    /* Check connection
-    if ($con->connect_error) {
-        die("Connection failed: " . $con->connect_error);
-    } 
-    echo "Connected successfully";*/
-?>
 <html lang="en">
   <head>
     <title>Register</title>
@@ -25,12 +11,12 @@
   </head>
   <body>
     
-    <div class="container">
+    <div class="container-fluid">
         <!-- Navigation bar -->
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <a class="navbar-brand" href="registration.php">Register</a>
+                  <a class="navbar-brand" href="registration-form.php">Register</a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -38,7 +24,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="login.php">Login</a>
@@ -48,6 +34,9 @@
                 </nav>
             </div>
         </div><!-- /* end navigation */ -->
+      </div>
+        <div class="container">
+        
         <!-- Registration form -->
         <form action="validate-data.php" method="post">
           <!-- Company name -->
@@ -100,7 +89,7 @@
               <input type="text" class="form-control" name="zipcode" id="zipcode" placeholder="00000" required>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary" name="register">Register</button>
+            <button type="submit" class="btn btn-primary" name="register">Register</button>
         </form>
     </div>
     <!-- Optional JavaScript -->

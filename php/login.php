@@ -4,14 +4,13 @@
 	/* Start new or resume existing session */
 	//session_start();
 
-	/* Create a connection with mysqli_connect($servername, $username, $password, $dbname) function */
-	$con = mysqli_connect("localhost","root","","scheduler");
+	/* Create a connection with */
+	$con = mysqli_connect("localhost","root","Cietweb#96","scheduler");
     
-    /* Check connection
+    /* Check connection */
     if ($con->connect_error) {
         die("Connection failed: " . $con->connect_error);
     } 
-    echo "Connected successfully";*/
 ?>
 <html lang="en">
   <head>
@@ -29,12 +28,12 @@
   </head>
   <body>
 
-    <div class="container">
+    <div class="container-fluid">
         <!-- Navigation bar -->
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <a class="navbar-brand" href="#">Scheduler</a>
+                  <a class="navbar-brand" href="#">Login</a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -42,7 +41,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="registration-form.php">Register</a>
@@ -52,6 +51,8 @@
                 </nav>
             </div>
         </div><!-- /* end navigation */ -->
+      </div>
+      <div class="container">
         <div class="row login-div">
             <div class="col-xs-12 col-md-12">
                 <!-- Login Form -->
@@ -120,7 +121,7 @@
             $emp_company = mysqli_real_escape_string($con,$_POST["emp-company"]);
         
             /* create query */    
-            $select_emp = "SELECT * FROM x_employees WHERE employee_id ='$emp_id' AND employee_password ='$emp_pass'";
+            $select_emp = "SELECT * FROM x_company WHERE employee_id ='$emp_id' AND employee_password ='$emp_pass' AND employee_company = '$emp_company'";
 
             /* run query against database */
             $run = mysqli_query($con,$select_emp);
